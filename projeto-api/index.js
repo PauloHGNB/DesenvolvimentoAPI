@@ -42,3 +42,16 @@ api.put("/cliente/update/cpfcnpj/12345678901", (req, res) => {
   res.status(200);
   res.json(response);
 });
+
+// Deletar cliente por cpf
+api.delete("/cliente/delete/cpfcnpj/12345678901", (req, res) => {
+  const response = [
+    {
+      mensagem: "Cliente deletado com sucesso",
+      status: 201,
+    },
+  ];
+
+  res.status(201);
+  res.json(response);
+});
