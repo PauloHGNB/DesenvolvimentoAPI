@@ -29,3 +29,16 @@ api.post("/clientes", (req, res) => {
   res.status(201);
   res.json(response);
 });
+
+// Atualizar cliente por cpf
+api.put("/cliente/update/cpfcnpj/12345678901", (req, res) => {
+  const response = [
+    {
+      mensagem: "Dados atualizados",
+      status: 200,
+    },
+  ];
+
+  res.status(200);
+  res.json(response);
+});
