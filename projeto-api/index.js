@@ -16,3 +16,16 @@ api.get("/", (req, res) => {
 api.listen(porta, () => {
   console.log(`Servidor em execução na porta ${porta}`);
 });
+
+// Cria usuarios
+api.post("/clientes", (req, res) => {
+  const response = [
+    {
+      mensagem: "Cliente criado com sucesso",
+      status: 201,
+    },
+  ];
+
+  res.status(201);
+  res.json(response);
+});
